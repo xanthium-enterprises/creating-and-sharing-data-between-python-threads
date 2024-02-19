@@ -1,5 +1,5 @@
 '''
-Creating Threads in Python with join
+Passing Arguments into functions
 
 (c) www.xanthium.in
 
@@ -7,15 +7,15 @@ Creating Threads in Python with join
 import time
 import threading   #required for threading 
 
-def do_something():
-    print(f'\nEntered do_something() ')
+def do_something(myarg1):
+    print(f'Arguments inside thread ->{myarg1}')
     time.sleep(2)
-    print('\nDone Sleeping in Thread\n')
+    
 
     
 print(f'\nStart of Main Thread ')
 
-t1 = threading.Thread(target = do_something)   #create the thread t1
+t1 = threading.Thread(target = do_something,args = (1,))  #create the thread t1
 t1.start()                                     #start the threads
 t1.join()
 
