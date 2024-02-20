@@ -1,24 +1,36 @@
 '''
-Returning Values from Thread functions using a List
+
 
 (c) www.xanthium.in
 
 '''
+
 import time
 import threading   #required for threading 
 
-def append_list_thread():
-    global_list.append('Appended in append_list_thread()')
+character_array = []
+
+def append_A():
+    for i in range(10):
+       character_array.append('A')
+       time.sleep(2)
+    #print(integer_array)
 
 
+def append_B():
+    for i in range(10):
+       character_array.append('B') 
+       time.sleep(6)
+    #print(integer_array)
 
-global_list = [] #Create empty global list
-global_list.append('Appended in Main Thread')
 
-print(global_list)
+t1= threading.Thread(target = append_A)
+t2= threading.Thread(target = append_B)
 
-t1 = threading.Thread(target = append_list_thread)
 t1.start()
-t1.join()
+t2.start()
 
-print(global_list)
+t1.join()
+t2.join()
+
+print(character_array)
