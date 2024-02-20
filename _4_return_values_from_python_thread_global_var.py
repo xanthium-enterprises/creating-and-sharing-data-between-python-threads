@@ -10,7 +10,7 @@ import threading   #required for threading
 def add_two_numbers(no1,no2):
     global global_sum
     global_sum = no1 + no2
-    #time.sleep(2)
+    time.sleep(2)
     
 
     
