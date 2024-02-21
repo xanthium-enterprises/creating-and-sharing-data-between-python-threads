@@ -1,6 +1,6 @@
 '''
 Returning Values from Thread functions using a List 
-using an argument on 
+using an argument on threading.Thread(target,args = (global_list,) )
 
 (c) www.xanthium.in
 

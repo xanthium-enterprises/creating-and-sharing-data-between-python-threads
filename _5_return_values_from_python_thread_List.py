@@ -1,5 +1,5 @@
 '''
-Returning Values from Thread functions using a List
+Returning Values from Thread functions using a List direct access by the thread
 
 (c) www.xanthium.in
 
