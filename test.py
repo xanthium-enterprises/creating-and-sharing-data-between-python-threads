@@ -1,25 +1,39 @@
+'''
+Program to demonstrate the events in python threading
+
+event.set()
+event.wait() 
+
+(c) www.xanthium.in
+'''
+
 import time
 import threading
 
-def function_t(): 
-    print('Entered t1 thread func')
-
-    my_event.wait()      # wait for the event to be set in main thread
-
-    print('Event is set,so this line gets printed')
+def infinite_loop_func():
     
+    print('Thread-t1:Start the loop')
 
-my_event = threading.Event()               # create an Event object 
+    while 1:
+            
+        if my_event.is_set():
+            break
+            
+        print('Thread-t1:Read from Serial Port')
+            
+        time.sleep(1)
+    
+my_event = threading.Event()
+my_event.clear()
 
-t1 = threading.Thread(target = function_t) # create t1 thread
-t1.start()                                 # start  t1 thread
-
-print('will set the event in 5 seconds')
+t1 = threading.Thread(target = infinite_loop_func) # create t1 thread
+t1.start()  
 
 time.sleep(5)    #wait 5 seconds 
+
 my_event.set()   #set the event after 5 seconds
+print('\n[Event Set in Main Thread]')
 
 t1.join()
 
-    
-
+print('\nEnd of the Main Thread')
