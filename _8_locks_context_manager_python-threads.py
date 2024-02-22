@@ -2,8 +2,8 @@
 Program to demonstrate the locks in python threading
 using context manager
  
- lock.acquire()
- lock.release()
+ with lock:
+    
 
 (c) www.xanthium.in
 

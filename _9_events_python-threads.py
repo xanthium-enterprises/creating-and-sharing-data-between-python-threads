@@ -1,7 +1,17 @@
+'''
+Program to demonstrate the events in python threading
+
+event.set()
+event.wait() 
+
+(c) www.xanthium.in
+'''
+
 import time
 import threading
 
 def function_t(): 
+
     print('Entered t1 thread func')
 
     my_event.wait()      # wait for the event to be set in main thread
