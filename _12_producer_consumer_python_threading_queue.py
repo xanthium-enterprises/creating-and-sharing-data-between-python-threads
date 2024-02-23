@@ -12,7 +12,7 @@ import queue       #thread safe queue
 
 def producer(shared_buffer):
 
-    for i in range(100):
+    for i in range(1000000):
         shared_buffer.put(i)
         #time.sleep(1)
     

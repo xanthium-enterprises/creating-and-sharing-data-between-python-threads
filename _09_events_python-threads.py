@@ -27,7 +27,7 @@ t1.start()                                 # start  t1 thread
 print('will set the event in 5 seconds')
 
 time.sleep(5)    #wait 5 seconds 
-#my_event.set()   #set the event after 5 seconds
+my_event.set()   #set the event after 5 seconds
 
 t1.join()
 
