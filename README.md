@@ -6,6 +6,8 @@
 
  - [Creating and Sharing data between Python threads using Queue Online Tutorial ](https://www.xanthium.in/creating-threads-sharing-synchronizing-data-using-queue-lock-semaphore-python)
 
+ - ![Tutorial teaches you the basics of Python threading and how to tranfer data between threads using producer-consumer pattern](https://www.xanthium.in/sites/default/files/inline-images/python-threads-with-lock.jpg)
+
 ## Tutorial Contents
 
  - Introduction to Python Threading
