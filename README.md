@@ -1,5 +1,23 @@
 # Creating and Sharing data between Python threads using Queue
 
- - Tutorial on Creating threads using Python and sharing data between threads
+  Tutorial teaches you the basics of Python threading and how to tranfer data between threads using producer-consumer pattern
 
- - [Creating and Sharing data between Python threads using Queue Tutorial Website](https://www.xanthium.in/creating-threads-sharing-synchronizing-data-using-queue-lock-semaphore-python)
+## Online Tutorial 
+
+ - [Creating and Sharing data between Python threads using Queue Online Tutorial ](https://www.xanthium.in/creating-threads-sharing-synchronizing-data-using-queue-lock-semaphore-python)
+
+## Tutorial Contents
+
+ - Introduction to Python Threading
+ - Creating a Thread in Python
+ - Using Thread.join() in Python Threading
+ - Passing Arguments to Python Threads
+ - Returning Values from Python Thread Functions
+ - Using Locks in Python
+ - Controlling Python Threads with Events
+ - Using event.wait() in Threading
+ - Using Python Events to Exit from an Infinite Loop
+ - Producer-Consumer Pattern Using Queue
+ - Introduction to Queue Data Type in Python
+ - Data Sharing Between Threads Using Queue
+
