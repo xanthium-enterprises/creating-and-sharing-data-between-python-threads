@@ -12,9 +12,9 @@ import queue       #thread safe queue
 
 def producer(shared_buffer):
 
-    for i in range(1000000):
+    for i in range(10):
         shared_buffer.put(i)
-        #time.sleep(1)
+        time.sleep(1)
     
     shared_buffer.put(None)
     
@@ -28,7 +28,7 @@ def consumer(shared_buffer):
         print(rxed_data)
 
     
-shared_buffer = queue.Queue()
+shared_buffer = queue.Queue() #create a thread safe queue
 
 t1 = threading.Thread(target = producer,args = (shared_buffer,))
 t2 = threading.Thread(target = consumer,args = (shared_buffer,))
@@ -36,3 +36,5 @@ t2 = threading.Thread(target = consumer,args = (shared_buffer,))
 t1.start()
 t2.start()
 
+t1.join()
+t1.join()
