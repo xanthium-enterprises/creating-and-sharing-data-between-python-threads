@@ -1,7 +1,6 @@
 '''
 Program to demonstrate the events in python threading
 Stop an infinite loop using Events
-Event passed as args into thread function 
 
 event.set()
 event.wait() 
@@ -12,25 +11,25 @@ event.wait()
 import time
 import threading
 
-def infinite_loop_func(event_state):
+def infinite_loop_func():
     
     print('Thread-t1:Start the loop')
 
     while 1:
             
-        if event_state.is_set():
+        if my_event.is_set():
             break
             
         print('Thread-t1:Read from Serial Port')
             
         time.sleep(1)
 
-    print(f'Thread-t1: my_event.is_set() = {event_state.is_set()}')
+    print(f'Thread-t1: my_event.is_set() = {my_event.is_set()}')
     
 my_event = threading.Event()
 my_event.clear()
 
-t1 = threading.Thread(target = infinite_loop_func,args =(my_event,)) # create t1 thread
+t1 = threading.Thread(target = infinite_loop_func) # create t1 thread
 t1.start()  
 
 time.sleep(5)    #wait 5 seconds 
