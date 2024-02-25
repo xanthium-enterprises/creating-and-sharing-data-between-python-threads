@@ -3,6 +3,8 @@ Creating Threads in Python without join
 
 (c) www.xanthium.in
 
+https://www.xanthium.in/creating-threads-sharing-synchronizing-data-using-queue-lock-semaphore-python
+
 '''
 import time
 import threading   #required for threading 

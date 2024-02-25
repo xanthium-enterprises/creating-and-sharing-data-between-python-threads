@@ -2,6 +2,8 @@
 Returning Values from Thread functions using a List 
 using an argument on threading.Thread(target,args = (global_list,) )
 
+https://www.xanthium.in/creating-threads-sharing-synchronizing-data-using-queue-lock-semaphore-python
+
 (c) www.xanthium.in
 
 '''

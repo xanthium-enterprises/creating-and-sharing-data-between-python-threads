@@ -1,6 +1,8 @@
 '''
 Returning Values from Thread functions using a List direct access by the thread
 
+https://www.xanthium.in/creating-threads-sharing-synchronizing-data-using-queue-lock-semaphore-python
+
 (c) www.xanthium.in
 
 '''

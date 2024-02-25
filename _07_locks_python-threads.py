@@ -7,6 +7,8 @@ using
 
 (c) www.xanthium.in
 
+https://www.xanthium.in/creating-threads-sharing-synchronizing-data-using-queue-lock-semaphore-python
+
 '''
 
 import time
@@ -27,15 +29,16 @@ def update_list_A(var_list):       #function to write A's to the List
         
     
 def update_list_B(var_list): #function to write B's to the List
+
     print('update_list_B thread called ')
     
-    #lock.acquire()
+    lock.acquire()
     
     for _ in range(10):
         var_list.append('B')
         time.sleep(0.10)
 
-    #lock.release()
+    lock.release()
 
 lock = threading.Lock()
 

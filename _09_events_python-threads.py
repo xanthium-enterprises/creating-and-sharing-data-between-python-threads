@@ -5,6 +5,8 @@ event.set()
 event.wait() 
 
 (c) www.xanthium.in
+
+https://www.xanthium.in/creating-threads-sharing-synchronizing-data-using-queue-lock-semaphore-python
 '''
 
 import time
@@ -14,7 +16,7 @@ def function_t():
 
     print('Entered t1 thread func')
 
-    my_event.wait(timeout = 10)      # wait for the event to be set in main thread
+    my_event.wait(timeout =10)      # wait for the event to be set in main thread
 
     print('Event is set,so this line gets printed')
     
